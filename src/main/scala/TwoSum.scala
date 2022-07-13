@@ -1,9 +1,6 @@
 import scala.annotation.tailrec
 
 object TwoSum extends App {
-  val inputArray: Array[Int] = Array(3, 2, 95, 4, -3)
-  val inputTarget: Int = 92
-
   def twoSumBrute(nums: Array[Int], target: Int): Array[Int] = {
     @tailrec
     def helper(x: Int, rest: Array[Int], hdIndex: Int): Array[Int] = {
